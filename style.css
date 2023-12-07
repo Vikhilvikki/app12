@@ -1,0 +1,78 @@
+body{
+    margin: -15px;
+    /* margin: 0px; */
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+    /* border:2px solid greenyellow; */
+    color: white;
+    position: relative;
+    animation-name: harry;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0.2s;
+    /* animation-direction:normal; */
+}
+@keyframes harry{
+    50%{
+        top:250px;
+        /* right: 0px; */
+    }
+    100%{
+        top: 0px;
+        /* right: 250px; */
+    }
+}
+header::before{
+    background: url('https://source.unsplash.com/random/300x200') no-repeat center center/cover;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    opacity: 0.5;           
+}
+
+h3{
+    /* font-family: 'Handjet', sans-serif; */
+font-family: 'Pixelify Sans', sans-serif;
+    font-size: 4rem;
+    box-shadow: 10px 12px 20px 29px  rgb(16, 16, 234,0.5);
+    text-shadow: 3px 4px #4ef51a;
+    transition: all 0.8s ease-in-out;
+}
+h3:hover{
+    transform: skew(15deg)
+}
+section {
+    height: 344px;
+    /* border: 5px solid orange; */
+    margin: 3px 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section::before{
+    content: "THIS IS A NEWW TECHNOLOGY BUDDY!!"
+}
+p{
+    text-align: center;
+}
+li{
+    list-style: none;
+    padding:19px 25px;
+}
+.navv{
+    display: flex;
+    flex-direction: row;
+    text-shadow:1px 2px #4ef51a;
+    transition: all 0.2s ease-in 0.2s;
+}
+.navv :hover{
+    background-color: #4ef51a;
+    border-radius: 22px;
+    height: 20px;
+    width: 84px; 
+}
